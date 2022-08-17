@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.form input {
+  height: 40px;
+  font-size: inherit;
+  padding: 0 20px;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.todos li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.todos li button {
+  font-size: inherit;
+  text-decoration: inherit;
+}
+.todos li button:first-child {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+.todos li button:last-child {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: red;
+  font-family: verdana;
+}
+.todos li.completed button:first-child {
+  text-decoration: line-through;
+}
