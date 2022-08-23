@@ -1,17 +1,21 @@
 import Todo from "./Todo";
 
-function TodoListView(props: any) {
+// @ts-ignore
+function TodoListView({todos, toggleCompleteTodo, deleteTodo}) {
     return (
         <>
             <ul className={"todos"} onClick={event => {
                 console.log(event.target)
             }}>
-                {props.todos.map((todo: Todo, idx: number) =>
-                    <li key={idx} id={todo.id}>
-                        <button onClick={props.toggleCompleteTodo}>{todo.title}</button>
-                        <button onClick={props.deleteTodo}>X</button>
-                    </li>
-                )}
+                {
+                    todos.map((todo: Todo, idx: number) =>
+                        <li key={idx} id={todo.id}>
+                            <button onClick={() => toggleCompleteTodo(todo.id)}
+                                    className={todo.isCompleted ? "completed" : ""}>{todo.title}</button>
+                            <button onClick={() => deleteTodo(todo.id)}>X</button>
+                        </li>
+                    )
+                }
             </ul>
         </>
     )
