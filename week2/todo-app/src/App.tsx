@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import TodoListView from "./TodoListView";
 import TodoInput from "./TodoInput";
@@ -9,7 +9,6 @@ function App() {
     const [inputTodo, setInputTodo] = useState("");
     const [todos, setTodos] = useState<Array<Todo>>([]);
 
-    // @ts-ignore
     useEffect(() => {
         document.title = `last id=${id}. The number of todo=${todos.length}`;
         fetchInitData();
@@ -21,8 +20,7 @@ function App() {
             return;
         }
         const newTodos = [...todos];
-        const todo = new Todo(`${id}`, `${id}`, inputTodo, false);
-        newTodos.push(todo);
+        newTodos.push(new Todo(`${id}`, `${id}`, inputTodo, false));
         setId(id + 1)
         setInputTodo("");
         setTodos(newTodos)
@@ -43,12 +41,14 @@ function App() {
         setTodos(newTodos);
     }
 
+    // TODO: 아래 function을 언제 불러야 하는지 잘 모르겠네요.
     async function fetchInitData() {
         const fetchedData: any = []
         await fetch('https://jsonplaceholder.typicode.com/todos')
             .then(res => res.json())
             .then(result => {
                 for (const each of result) {
+                    debugger;
                     const t = new Todo(each.id, each.userId, each.title, each.completed);
                     fetchedData.push(t);
                 }
@@ -59,7 +59,7 @@ function App() {
     }
 
     return (
-        <div className={"App"}>
+        <div>
             <TodoInput
                 inputTodo={inputTodo} setInputTodo={setInputTodo}
                 addTodo={addTodo}

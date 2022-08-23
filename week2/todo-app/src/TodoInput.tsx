@@ -1,17 +1,10 @@
-import React, {useRef} from "react";
+import React from "react";
 
 // @ts-ignore
 function TodoInput({inputTodo, setInputTodo, addTodo}) {
-    const inputEl = useRef(null);
-    const onButtonClick = () => {
-        // @ts-ignore
-        inputEl.current.focus();
-        addTodo();
-    };
-
     return (
         <div>
-            <input ref={inputEl} id="todoInput" type="text" value={inputTodo}
+            <input id="todoInput" type="text" value={inputTodo}
                    onChange={(e) => setInputTodo(e.target.value)} placeholder="할일을 입력하세요..."
                    onKeyPress={(event => {
                        if (event.code === "Enter") {
@@ -19,7 +12,7 @@ function TodoInput({inputTodo, setInputTodo, addTodo}) {
                        }
                    })}
             />
-            <button onClick={onButtonClick}>추가</button>
+            <button onClick={addTodo}>추가</button>
         </div>
     )
 }
