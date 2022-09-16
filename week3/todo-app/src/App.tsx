@@ -45,19 +45,21 @@ function App() {
 
     async function fetchInitData() {
         const fetchedData: any = []
-        await fetch('https://jsonplaceholder.typicode.com/todos')
-            .then(res => res.json())
-            .then(result => {
-                for (const each of result) {
-                    const t = new Todo(each.id, each.userId, each.title, each.completed);
-                    fetchedData.push(t);
-                }
-            })
-            .catch(err => console.error(err));
+        try {
+            const res = await fetch('https://jsonplaceholder.typicode.com/todos')
+            const result = await res.json();
+            result.forEach((each: Todo) => {
+                // @ts-ignore
+                const t = new Todo(each.id, each.userId, each.title, each.completed);
+                fetchedData.push(t);
+            });
 
-        setTodos(fetchedData);
+            setTodos(fetchedData);
+        } catch (e) {
+            console.error(e);
+        }
     }
-
+    
     return (
         <div className={"App"}>
             <TodoInput

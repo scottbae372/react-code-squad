@@ -1,0 +1,271 @@
+{}
+//{
+//  "body": {
+//    "vehicleStatusInfo": {
+//      "evLocationReport": {
+//        "phoneNum": "01233687752",
+//        "gpsdetail": {
+//          "coord": {
+//            "type": 0,
+//            "lon": 127.4813861,
+//            "lat": 34.98326944
+//          },
+//          "time": "20220831145633",
+//          "head": 333,
+//          "speed": {
+//            "value": 0,
+//            "unit": 0
+//          },
+//          "ign3": false
+//        },
+//        "vehicleSpeed": {
+//          "value": 0,
+//          "unit": 0
+//        },
+//        "maxEnergyKJ": 130680.0,
+//        "drvdistancestd": {
+//          "type": 2,
+//          "rangeByFuel": {
+//            "evModeRange": {
+//              "value": 378.0,
+//              "unit": 1
+//            },
+//            "totalAvailableRange": {
+//              "value": 378.0,
+//              "unit": 1
+//            },
+//            "gasModeRange": {
+//              "value": 0.0,
+//              "unit": 1
+//            }
+//          }
+//        },
+//        "vehicleCode": 1047,
+//        "socKJ": 185918.4,
+//        "dte": {
+//          "value": 378000.0,
+//          "unit": 2
+//        },
+//        "drivingModeState": -1,
+//        "vcuFatcCst": 280
+//      },
+//      "odometer": {
+//        "value": 9912.0,
+//        "unit": 1
+//      },
+//      "vehicleLocation": {
+//        "coord": {
+//          "type": 0,
+//          "lon": 127.4813861,
+//          "lat": 34.98326944
+//        },
+//        "time": "20220831145633",
+//        "head": 333,
+//        "speed": {
+//          "value": 0,
+//          "unit": 0
+//        },
+//        "ign3": false
+//      },
+//      "vehicleStatus": {
+//        "defrost": false,
+//        "sideBackWindowHeat": 0,
+//        "doorLock": false,
+//        "washerFluidStatus": false,
+//        "battery": {
+//          "batSoc": 89,
+//          "sjbDeliveryMode": 1
+//        },
+//        "systemCutOffAlert": 0,
+//        "smartKeyBatteryWarning": false,
+//        "breakOilStatus": false,
+//        "sleepModeCheck": true,
+//        "eVStatus": {
+//          "drvDistance": [
+//            {
+//              "type": 2,
+//              "distanceType": {
+//                "value": 0,
+//                "unit": 0
+//              }
+//            }
+//          ],
+//          "batteryPlugin": 0,
+//          "remainTime": {
+//            "value": 100,
+//            "unit": 1
+//          },
+//          "batteryPreconditioning": false,
+//          "reservChargeInfos": {
+//            "targetSOClist": [
+//              {
+//                "dte": {
+//                  "type": 2,
+//                  "distanceType": {
+//                    "value": 536.0,
+//                    "unit": 1
+//                  }
+//                },
+//                "plugType": 0,
+//                "targetSOClevel": 100
+//              },
+//              {
+//                "dte": {
+//                  "type": 2,
+//                  "distanceType": {
+//                    "value": 536.0,
+//                    "unit": 1
+//                  }
+//                },
+//                "plugType": 1,
+//                "targetSOClevel": 100
+//              }
+//            ],
+//            "reservChargeInfoSTD2": {
+//              "reservChargeInfoDetailSTD": {
+//                "reservChargeSet": false,
+//                "reservFatcSet": {
+//                  "airCtrl": 0,
+//                  "defrost": false,
+//                  "airTemp": {
+//                    "value": "14H",
+//                    "hvacTempType": 1,
+//                    "unit": 0
+//                  }
+//                },
+//                "reservInfo": {
+//                  "time": {
+//                    "timeSection": 0,
+//                    "time": "1200"
+//                  },
+//                  "day": [
+//                    9
+//                  ]
+//                }
+//              }
+//            },
+//            "ect": {
+//              "start": {
+//                "time": {
+//                  "timeSection": 0,
+//                  "time": "1200"
+//                },
+//                "day": 9
+//              },
+//              "end": {
+//                "time": {
+//                  "timeSection": 0,
+//                  "time": "1200"
+//                },
+//                "day": 9
+//              }
+//            },
+//            "reservChargeInfoSTD": {
+//              "reservChargeInfoDetailSTD": {
+//                "reservChargeSet": false,
+//                "reservFatcSet": {
+//                  "airCtrl": 0,
+//                  "defrost": false,
+//                  "airTemp": {
+//                    "value": "14H",
+//                    "hvacTempType": 1,
+//                    "unit": 0
+//                  }
+//                },
+//                "reservInfo": {
+//                  "time": {
+//                    "timeSection": 0,
+//                    "time": "1200"
+//                  },
+//                  "day": [
+//                    9
+//                  ]
+//                }
+//              }
+//            },
+//            "reservFlag": 0,
+//            "offpeakPowerInfo": {
+//              "offPeakPowerFlag": 0,
+//              "offPeakPowerTime1": {
+//                "endtime": {
+//                  "timeSection": 0,
+//                  "time": "1200"
+//                },
+//                "starttime": {
+//                  "timeSection": 0,
+//                  "time": "1200"
+//                }
+//              }
+//            }
+//          },
+//          "chargePortDoorOpenStatus": 2,
+//          "drvDistanceTotal": {
+//            "type": 2,
+//            "distanceType": {
+//              "value": 0,
+//              "unit": 0
+//            }
+//          },
+//          "batteryStatus": 76,
+//          "drvDistanceEngine": {
+//            "type": 2,
+//            "distanceType": {
+//              "value": 0.0,
+//              "unit": 1
+//            }
+//          },
+//          "batteryCharge": false
+//        },
+//        "engine": false,
+//        "hazardStatus": 0,
+//        "ign3": false,
+//        "trunkOpen": false,
+//        "remoteWaitingTimeAlert": {
+//          "remoteControlAvailable": 1,
+//          "remoteControlWaitingTime": 168
+//        },
+//        "lampWireStatus": {
+//          "headLamp": {
+//            "leftHighLamp": false,
+//            "rightLowLamp": false,
+//            "rightBifuncLamp": false,
+//            "leftBifuncLamp": false,
+//            "rightHighLamp": false,
+//            "leftLowLamp": false,
+//            "headLampStatus": false
+//          },
+//          "stopLamp": {
+//            "leftLamp": false,
+//            "rightLamp": false
+//          },
+//          "turnSignalLamp": {
+//            "rightFrontLamp": false,
+//            "leftRearLamp": false,
+//            "rightRearLamp": false,
+//            "leftFrontLamp": false
+//          }
+//        },
+//        "steerWheelHeat": 0,
+//        "tailLampStatus": 0,
+//        "acc": false,
+//        "airTemp": {
+//          "hexValue": "00",
+//          "hvacTempType": 1
+//        },
+//        "doorOpen": {
+//          "frontRight": 0,
+//          "backRight": 0,
+//          "backLeft": 0,
+//          "frontLeft": 0
+//        },
+//        "airCtrl": false,
+//        "tirePressureLamp": {
+//          "tirePressureLampAll": 0
+//        },
+//        "transCond": true,
+//        "engineOilStatus": false,
+//        "hoodOpen": false
+//      }
+//    }
+//  }
+//}

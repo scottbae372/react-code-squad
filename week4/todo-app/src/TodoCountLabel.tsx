@@ -1,6 +1,9 @@
 import React from "react";
 
 // @ts-ignore
+export default TodoCountLabel;
+
+// @ts-ignore
 function TodoCountLabel({totalTodoCnt, totalTodoCompletedCnt, totalTodoInCompletedCnt}) {
     return (
         <div>
@@ -8,5 +11,3 @@ function TodoCountLabel({totalTodoCnt, totalTodoCompletedCnt, totalTodoInComplet
         </div>
     );
 }
-
-export default TodoCountLabel;
